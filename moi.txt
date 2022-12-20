@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class MultiplicationTable {
+   public static void main(String[] args) {
+      int my_input, i;
+      my_input = 16;
+      System.out.println("Required packages have been imported");
+      Scanner my_scanner = new Scanner(System.in);
+      System.out.println("A reader object has been defined ");
+      System.out.print("Enter a number : ");
+      my_input = my_scanner.nextInt();
+      System.out.println("The multiplication table of " +my_input + " is :");
+      for(i = 1; i <= 10; ++i){
+         System.out.printf("%d * %d = %d ", my_input, i, my_input * i);
+      }
+   }
+}
